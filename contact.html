@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BookShop</title>
+    <meta name="description" content="Get in touch with BookShop. We're here to help with your book orders, questions, and recommendations.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">📚 BookShop</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="delivery.html">Delivery</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <h1>Contact Us</h1>
+            <p style="text-align: center; margin-bottom: 3rem; font-size: 1.1rem; color: #666;">
+                We'd love to hear from you! Get in touch with any questions, suggestions, or book recommendations.
+            </p>
+
+            <div class="form-container">
+                <form id="contactForm" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Please select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="order">Order Question</option>
+                            <option value="recommendation">Book Recommendation</option>
+                            <option value="delivery">Delivery Issue</option>
+                            <option value="payment">Payment Problem</option>
+                            <option value="return">Return/Exchange</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" placeholder="Please describe your inquiry in detail..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="newsletter" name="newsletter" style="width: auto; margin-right: 10px;">
+                            Subscribe to our newsletter for book recommendations and special offers
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+
+                <div id="formMessage" style="margin-top: 1rem; padding: 1rem; border-radius: 5px; display: none;"></div>
+            </div>
+
+            <!-- Contact Information -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div class="info-section">
+                    <h3>📍 Visit Our Store</h3>
+                    <p><strong>BookShop Headquarters</strong></p>
+                    <p>123 Literary Lane<br>
+                    Book City, BC 12345<br>
+                    United States</p>
+                    <p><strong>Store Hours:</strong><br>
+                    Monday - Friday: 9:00 AM - 8:00 PM<br>
+                    Saturday: 9:00 AM - 6:00 PM<br>
+                    Sunday: 11:00 AM - 5:00 PM</p>
+                </div>
+
+                <div class="info-section">
+                    <h3>📞 Get in Touch</h3>
+                    <p><strong>Customer Service:</strong><br>
+                    Phone: (555) 123-BOOK (2665)<br>
+                    Email: support@bookshop.com</p>
+                    
+                    <p><strong>Book Recommendations:</strong><br>
+                    Email: recommendations@bookshop.com</p>
+                    
+                    <p><strong>Business Inquiries:</strong><br>
+                    Email: business@bookshop.com</p>
+                </div>
+
+                <div class="info-section">
+                    <h3>🚚 Order Support</h3>
+                    <p><strong>Order Tracking:</strong><br>
+                    Track your order status online or call our support team</p>
+                    
+                    <p><strong>Returns & Exchanges:</strong><br>
+                    30-day return policy<br>
+                    Free return shipping</p>
+                    
+                    <p><strong>Bulk Orders:</strong><br>
+                    Special pricing for schools, libraries, and book clubs</p>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="info-section" style="margin-top: 2rem;">
+                <h3>❓ Frequently Asked Questions</h3>
+                <div style="display: grid; gap: 1rem;">
+                    <div>
+                        <strong>Q: How long does delivery take?</strong>
+                        <p>Standard delivery takes 3-5 business days. Express delivery is available for 1-2 business days. See our <a href="delivery.html">delivery page</a> for more details.</p>
+                    </div>
+                    <div>
+                        <strong>Q: What payment methods do you accept?</strong>
+                        <p>We accept all major credit cards, PayPal, bank transfers, and cash on delivery. Check our <a href="payment.html">payment options</a> for complete information.</p>
+                    </div>
+                    <div>
+                        <strong>Q: Can I return a book if I don't like it?</strong>
+                        <p>Yes! We offer a 30-day return policy for all books in original condition. Return shipping is free.</p>
+                    </div>
+                    <div>
+                        <strong>Q: Do you offer book recommendations?</strong>
+                        <p>Absolutely! Our expert staff loves helping customers find their next great read. Contact us with your preferences and we'll suggest perfect books for you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="categories.html">Categories</a>
+                <a href="contact.html">Contact</a>
+                <a href="delivery.html">Delivery Info</a>
+                <a href="payment.html">Payment Options</a>
+            </div>
+            <p>&copy; 2024 BookShop. All rights reserved. | Your trusted online bookstore</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
